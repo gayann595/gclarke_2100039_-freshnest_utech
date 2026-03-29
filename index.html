@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FreshNest - An accessible bakery, grocery and laundry service for all Jamaican households." />
+  <title>FreshNest | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="navbar__logo" aria-label="FreshNest Home">Fresh<span>Nest</span></a>
+    <ul class="navbar__links" id="nav-links" role="list">
+      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+    <a href="cart.html" class="navbar__cart" aria-label="View shopping cart">🛒
+      <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+    </a>
+    <button class="navbar__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <span class="hero__tag">🇯🇲 Proudly Serving Jamaica</span>
+        <h1 class="hero__title" id="hero-title">Everything You Need,<br><span>Delivered With Care</span></h1>
+        <p class="hero__subtitle">Fresh baked goods, everyday groceries, and laundry services all in one accessible platform built for everyone.</p>
+        <div class="hero__buttons">
+          <a href="products.html" class="btn btn--primary">Shop Now 🛍️</a>
+          <a href="register.html" class="btn btn--outline">Create Account</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" aria-labelledby="services-title">
+      <div class="section__header">
+        <span class="section__tag">What We Offer</span>
+        <h2 class="section__title" id="services-title">Three Services, One Platform</h2>
+        <p class="section__subtitle">Everything your household needs, designed to be accessible for all.</p>
+      </div>
+      <div class="services__grid">
+        <article class="service-card" tabindex="0" aria-label="Bakery service">
+          <span class="service-card__icon" role="img" aria-label="Bread">🍞</span>
+          <h3 class="service-card__title">Bakery</h3>
+          <p class="service-card__desc">Freshly baked breads, pastries, cakes, and more made daily and delivered to your door.</p>
+        </article>
+        <article class="service-card" tabindex="0" aria-label="Grocery service">
+          <span class="service-card__icon" role="img" aria-label="Vegetables">🥦</span>
+          <h3 class="service-card__title">Grocery</h3>
+          <p class="service-card__desc">Fruits, vegetables, pantry staples, and household essentials sourced fresh for your family.</p>
+        </article>
+        <article class="service-card" tabindex="0" aria-label="Laundry service">
+          <span class="service-card__icon" role="img" aria-label="Washing machine">👕</span>
+          <h3 class="service-card__title">Laundry</h3>
+          <p class="service-card__desc">Standard wash, dry cleaning, and folding & delivery packages priced by load or weight.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="featured-title">
+      <div class="section__header">
+        <span class="section__tag">Top Picks</span>
+        <h2 class="section__title" id="featured-title">Featured Products</h2>
+        <p class="section__subtitle">Some of our most popular items this week.</p>
+      </div>
+      <div class="products__grid">
+        <article class="product-card" tabindex="0">
+          <div class="product-card__img" role="img" aria-label="Sourdough Bread">🍞</div>
+          <div class="product-card__body">
+            <p class="product-card__category">Bakery</p>
+            <h3 class="product-card__name">Sourdough Bread</h3>
+            <p class="product-card__price">$1000</p>
+            <button class="product-card__btn" data-name="Sourdough Bread" data-price="1000" data-category="Bakery" aria-label="Add Sourdough Bread to cart">Add to Cart</button>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0">
+          <div class="product-card__img" role="img" aria-label="Fresh Tomatoes">🍅</div>
+          <div class="product-card__body">
+            <p class="product-card__category">Grocery</p>
+            <h3 class="product-card__name">Fresh Tomatoes (1kg)</h3>
+            <p class="product-card__price">$350</p>
+            <button class="product-card__btn" data-name="Fresh Tomatoes (1kg)" data-price="350" data-category="Grocery" aria-label="Add Fresh Tomatoes to cart">Add to Cart</button>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0">
+          <div class="product-card__img" role="img" aria-label="Chocolate Cake">🎂</div>
+          <div class="product-card__body">
+            <p class="product-card__category">Bakery</p>
+            <h3 class="product-card__name">Chocolate Cake</h3>
+            <p class="product-card__price">$2500</p>
+            <button class="product-card__btn" data-name="Chocolate Cake" data-price="2500" data-category="Bakery" aria-label="Add Chocolate Cake to cart">Add to Cart</button>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0">
+          <div class="product-card__img" role="img" aria-label="Standard Wash">👕</div>
+          <div class="product-card__body">
+            <p class="product-card__category">Laundry</p>
+            <h3 class="product-card__name">Standard Wash</h3>
+            <p class="product-card__price">$1300</p>
+            <button class="product-card__btn" data-name="Standard Wash" data-price="8.00" data-category="Laundry" aria-label="Add Standard Wash to cart">Add to Cart</button>
+          </div>
+        </article>
+      </div>
+      <div class="text-center mt-2">
+        <a href="products.html" class="btn btn--green">View All Products</a>
+      </div>
+    </section>
+
+    <section class="accessibility-banner" aria-labelledby="access-title">
+      <h2 id="access-title">Built For Everyone 💚</h2>
+      <p>FreshNest is designed to be fully accessible for persons with all types of challenges physical, visual, hearing, and cognitive.</p>
+      <div class="accessibility-features" role="list">
+        <span class="accessibility-feature" role="listitem">♿ Keyboard Navigation</span>
+        <span class="accessibility-feature" role="listitem">👁️ Screen Reader Ready</span>
+        <span class="accessibility-feature" role="listitem">🎨 High Contrast</span>
+        <span class="accessibility-feature" role="listitem">🔡 Large Text Support</span>
+        <span class="accessibility-feature" role="listitem">🖱️ Large Click Targets</span>
+        <span class="accessibility-feature" role="listitem">💬 Simple Language</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p class="footer__logo">Fresh<span>Nest</span></p>
+    <p class="footer__tagline">Your all-in-one accessible home services platform 🇯🇲</p>
+    <nav class="footer__links" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="about.html">About Us</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
+    <p class="footer__copy">&copy; 2026 FreshNest. All rights reserved.</p>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>

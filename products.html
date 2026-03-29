@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshNest | Products</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="navbar__logo">Fresh<span>Nest</span></a>
+    <ul class="navbar__links" id="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html" class="active" aria-current="page">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+    <a href="cart.html" class="navbar__cart" aria-label="View cart">🛒
+      <span class="cart-count" id="cart-count">0</span>
+    </a>
+    <button class="navbar__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="products-page-hero">
+    <h1>Our Products &amp; Services</h1>
+    <p>Browse bakery, grocery, and laundry offerings — all in one place.</p>
+  </div>
+
+  <main id="main-content" class="section">
+    <div class="filter-bar" role="group" aria-label="Filter products by category">
+      <button class="filter-btn active" data-filter="All" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="Bakery" aria-pressed="false">🍞 Bakery</button>
+      <button class="filter-btn" data-filter="Grocery" aria-pressed="false">🥦 Grocery</button>
+      <button class="filter-btn" data-filter="Laundry" aria-pressed="false">👕 Laundry</button>
+    </div>
+
+    <div class="products__grid" id="products-grid">
+      <article class="product-card" data-category="Bakery" tabindex="0">
+        <div class="product-card__img" role="img" aria-label="Sourdough Bread">🍞</div>
+        <div class="product-card__body">
+          <p class="product-card__category">Bakery</p>
+          <h2 class="product-card__name">Sourdough Bread</h2>
+          <p class="product-card__price">$1000</p>
+          <button class="product-card__btn" data-name="Sourdough Bread" data-price="1000" data-category="Bakery" aria-label="Add Sourdough Bread to cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="product-card" data-category="Bakery" tabindex="0">
+        <div class="product-card__img" role="img" aria-label="Chocolate Cake">🎂</div>
+        <div class="product-card__body">
+          <p class="product-card__category">Bakery</p>
+          <h2 class="product-card__name">Chocolate Cake</h2>
+          <p class="product-card__price">$2500</p>
+          <button class="product-card__btn" data-name="Chocolate Cake" data-price="2500" data-category="Bakery" aria-label="Add Chocolate Cake to cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="product-card" data-category="Bakery" tabindex="0">
+        <div class="product-card__img" role="img" aria-label="Croissants">🥐</div>
+        <div class="product-card__body">
+          <p class="product-card__category">Bakery</p>
+          <h2 class="product-card__name">Croissants (6 pack)</h2>
+          <p class="product-card__price">$3200</p>
+          <button class="product-card__btn" data-name="Croissants (6 pack)" data-price="3200" data-category="Bakery" aria-label="Add Croissants to cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="product-card" data-category="Bakery" tabindex="0">
+        <div class="product-card__img" role="img" aria-label="French Baguette">🥖</div>
+        <div class="product-card__body">
+          <p class="product-card__category">Bakery</p>
+          <h2 class="product-card__name">French Baguette</h2>
+          <p class="product-card__price">$850</p>
+          <button class="product-card__btn" data-name="French Baguette" data-price="850" data-category="Bakery" aria-label="Add Baguette to cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="product-card" data-category="Grocery" tabindex="0">
+        <div class="product-card__img" role="img" aria-label="Fresh Tomatoes">🍅</div>
+        <div class="product-card__body">
+          <p class="product-card__category">Grocery</p>
+          <h2 class="product-card__name">Fresh Tomatoes (1kg)</h2>
+          <p class="product-card__price">$350</p>
+          <button class="product-card__btn" data-name="Fresh Tomatoes (1kg)" data-price="350" data-category="Grocery" aria-label="Add Tomatoes to cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="product-card" data-category="Grocery" tabindex="0">
+        <div class="product-card__img" role="img" aria-label="Bananas">🍌</div>
+        <div class="product-card__body">
+          <p class="product-card__category">Grocery</p>
+          <h2 class="product-card__name">Bananas (bunch)</h2>
+          <p class="product-card__price">$250</p>
+          <button class="product-card__btn" data-name="Bananas (bunch)" data-price="250" data-category="Grocery" aria-label="Add Bananas to cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="product-card" data-category="Grocery" tabindex="0">
+        <div class="product-card__img" role="img" aria-label="Broccoli">🥦</div>
+        <div class="product-card__body">
+          <p class="product-card__category">Grocery</p>
+          <h2 class="product-card__name">Broccoli (1 head)</h2>
+          <p class="product-card__price">$600</p>
+          <button class="product-card__btn" data-name="Broccoli (1 head)" data-price="600" data-category="Grocery" aria-label="Add Broccoli to cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="product-card" data-category="Grocery" tabindex="0">
+        <div class="product-card__img" role="img" aria-label="Eggs">🥚</div>
+        <div class="product-card__body">
+          <p class="product-card__category">Grocery</p>
+          <h2 class="product-card__name">Eggs (dozen)</h2>
+          <p class="product-card__price">$1200</p>
+          <button class="product-card__btn" data-name="Eggs (dozen)" data-price="1200" data-category="Grocery" aria-label="Add Eggs to cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="product-card" data-category="Laundry" tabindex="0">
+        <div class="product-card__img" role="img" aria-label="Standard Wash">👕</div>
+        <div class="product-card__body">
+          <p class="product-card__category">Laundry</p>
+          <h2 class="product-card__name">Standard Wash</h2>
+          <p class="product-card__price">$1200.00</p>
+          <button class="product-card__btn" data-name="Standard Wash" data-price="8.00" data-category="Laundry" aria-label="Book Standard Wash">Book Now</button>
+        </div>
+      </article>
+      <article class="product-card" data-category="Laundry" tabindex="0">
+        <div class="product-card__img" role="img" aria-label="Dry Cleaning">🧥</div>
+        <div class="product-card__body">
+          <p class="product-card__category">Laundry</p>
+          <h2 class="product-card__name">Dry Cleaning</h2>
+          <p class="product-card__price">$2400.00</p>
+          <button class="product-card__btn" data-name="Dry Cleaning" data-price="15.00" data-category="Laundry" aria-label="Book Dry Cleaning">Book Now</button>
+        </div>
+      </article>
+      <article class="product-card" data-category="Laundry" tabindex="0">
+        <div class="product-card__img" role="img" aria-label="Fold and Deliver">📦</div>
+        <div class="product-card__body">
+          <p class="product-card__category">Laundry</p>
+          <h2 class="product-card__name">Fold &amp; Deliver</h2>
+          <p class="product-card__price">$1900.00</p>
+          <button class="product-card__btn" data-name="Fold & Deliver" data-price="12.00" data-category="Laundry" aria-label="Book Fold and Deliver">Book Now</button>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p class="footer__logo">Fresh<span>Nest</span></p>
+    <p class="footer__copy">&copy; 2026 FreshNest. All rights reserved.</p>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>

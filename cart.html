@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshNest | Cart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="navbar__logo">Fresh<span>Nest</span></a>
+    <ul class="navbar__links" id="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html" class="active" aria-current="page">Cart</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+    <a href="cart.html" class="navbar__cart" aria-label="View cart">🛒
+      <span class="cart-count" id="cart-count">0</span>
+    </a>
+    <button class="navbar__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main id="main-content" class="section cart-main">
+    <div class="section__header">
+      <h1 class="section__title">Your Cart 🛒</h1>
+      <p class="section__subtitle">Review your items before checking out.</p>
+    </div>
+
+    <div id="cart-empty" class="cart-empty">
+      <p class="cart-empty__icon">🛒</p>
+      <h2 class="cart-empty__title">Your cart is empty</h2>
+      <p class="cart-empty__text">Add some items from our products page to get started.</p>
+      <a href="products.html" class="btn btn--green">Browse Products</a>
+    </div>
+
+    <div id="cart-section">
+      <div class="cart-overflow">
+        <table class="cart-table" aria-label="Shopping cart items">
+          <thead>
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Sub-Total</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody id="cart-body"></tbody>
+        </table>
+      </div>
+
+      <div class="cart-summary" aria-label="Order summary">
+        <h2 class="cart-summary__title">Order Summary</h2>
+        <div class="cart-summary__row"><span>Subtotal</span><span id="subtotal">$0.00</span></div>
+        <div class="cart-summary__row"><span>Discount (5% over $50)</span><span id="discount">-$0.00</span></div>
+        <div class="cart-summary__row"><span>Tax (15%)</span><span id="tax">$0.00</span></div>
+        <div class="cart-summary__row cart-summary__row--total"><span>Total</span><span id="total">$0.00</span></div>
+        <div class="cart-actions">
+          <a href="checkout.html" class="btn btn--primary btn--checkout">Check Out</a>
+          <button id="clear-cart-btn" class="btn btn--outline btn--clear" aria-label="Clear all cart items">Clear All</button>
+        </div>
+        <a href="products.html" class="btn btn--outline btn--continue mt-1">Continue Shopping</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p class="footer__logo">Fresh<span>Nest</span></p>
+    <p class="footer__copy">&copy; 2026 FreshNest. All rights reserved.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

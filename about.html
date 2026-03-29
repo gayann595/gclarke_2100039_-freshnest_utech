@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshNest | About Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* IA#2 - About page styles */
+    .about-hero {
+      background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
+      padding: 4rem 2rem;
+      text-align: center;
+      color: var(--cream);
+    }
+    .about-hero h1 {
+      color: var(--accent-yellow);
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 0.8rem;
+    }
+    .about-hero p {
+      color: rgba(253,246,236,0.82);
+      font-size: 1.05rem;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .about-card {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+    }
+    .about-card h2 {
+      font-size: 1.3rem;
+      color: var(--green-dark);
+      margin-bottom: 0.8rem;
+    }
+    .about-card p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+    .student-info {
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      max-width: 680px;
+      margin: 0 auto;
+      border: 1px solid var(--border);
+    }
+    .student-info h2 {
+      font-size: 1.5rem;
+      color: var(--green-dark);
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 2px solid var(--border);
+    }
+    .info-row {
+      display: flex;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+    .info-row:last-child { border-bottom: none; }
+    .info-label {
+      font-weight: 600;
+      color: var(--green-dark);
+      min-width: 160px;
+      flex-shrink: 0;
+    }
+    .info-value {
+      color: var(--text-mid);
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="navbar__logo">Fresh<span>Nest</span></a>
+    <ul class="navbar__links" id="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="about.html" class="active" aria-current="page">About Us</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+    <a href="cart.html" class="navbar__cart" aria-label="View cart">🛒
+      <span class="cart-count" id="cart-count">0</span>
+    </a>
+    <button class="navbar__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="about-hero">
+    <h1>About FreshNest 🌿</h1>
+    <p>Learn about who we are, what we stand for, and the person behind this project.</p>
+  </div>
+
+  <main id="main-content" class="section">
+
+    <!-- Business Info Cards -->
+    <div class="about-grid mb-2">
+      <div class="about-card">
+        <h2>🏪 Our Business</h2>
+        <p>FreshNest is an all-in-one accessible e-commerce platform combining a bakery, grocery store, and laundry service. We serve everyday Jamaican households with fresh, quality products delivered to their door.</p>
+      </div>
+
+      <div class="about-card">
+        <h2>🎯 Mission Statement</h2>
+        <p>To provide fresh, affordable, and convenient shopping and home services to all Jamaican households with a commitment to full accessibility for persons of all abilities.</p>
+      </div>
+
+      <div class="about-card">
+        <h2>🌟 Vision Statement</h2>
+        <p>To be Jamaica's leading inclusive e-commerce platform where every customer, regardless of ability, can shop with ease, dignity, and confidence.</p>
+      </div>
+
+      <div class="about-card">
+        <h2>👥 Intended Audience</h2>
+        <p>Everyday Jamaican households with a special focus on persons with physical, visual, hearing, and cognitive challenges who are too often overlooked by traditional e-commerce platforms.</p>
+      </div>
+    </div>
+
+    <!-- Student Info Section -->
+    <div class="student-info fade-up" role="region" aria-label="Student information">
+      <h2>Student Information</h2>
+
+      <div class="info-row">
+        <span class="info-label">Full Name:</span>
+        <span class="info-value">Gay Ann Clarke</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Student ID:</span>
+        <span class="info-value">2100039</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Email:</span>
+        <!-- IA#2 - mailto link for customer queries -->
+        <span class="info-value">
+          <a href="/cdn-cgi/l/email-protection#f5aeacbaa0a7d5bcb1a8b5808190969ddb909180db9f98" class="about-info-email-link" aria-label="Send email to student">
+            2100039@utech.edu.jm
+          </a>
+        </span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Module Code:</span>
+        <span class="info-value">CIT2011</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Assignment:</span>
+        <span class="info-value">Individual Assignment #2 Web Programming</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Class Day/Time:</span>
+        <span class="info-value">Friday </span>(5:00 PM -6:00 PM)
+      </div>
+
+      <div class="about-contact-box">
+        <p class="about-contact-box">
+          📧 Have questions or feedback? Send us an email at
+          <a href="/cdn-cgi/l/email-protection#451e1c0a1017650c011805303120262d6b2021306b2f28" style="color:var(--green-mid); font-weight:600;">2100039@utech.edu.jm</a>
+          and we'll get back to you as soon as possible.
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p class="footer__logo">Fresh<span>Nest</span></p>
+    <p class="footer__tagline">Your all-in-one accessible home services platform 🇯🇲</p>
+    <nav class="footer__links" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="about.html">About Us</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
+    <p class="footer__copy">&copy; 2026 FreshNest. All

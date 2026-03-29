@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshNest | Register</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="navbar__logo">Fresh<span>Nest</span></a>
+    <ul class="navbar__links" id="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html" class="active" aria-current="page">Register</a></li>
+    </ul>
+    <a href="cart.html" class="navbar__cart" aria-label="View cart">🛒
+      <span class="cart-count" id="cart-count">0</span>
+    </a>
+    <button class="navbar__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main id="main-content" class="form-page" >
+    <div class="form-container fade-up" class="register-container">
+      <h1>Create Account 🌿</h1>
+      <p>Join FreshNest and start shopping today.</p>
+
+      <form id="register-form" novalidate aria-label="Registration form">
+
+        <div class="form-group">
+          <label for="reg-name">Full Name</label>
+          <input type="text" id="reg-name" name="fullname"
+            placeholder="e.g. Ann-Marie Wright"
+            autocomplete="name"
+            aria-required="true"
+            aria-describedby="name-error" />
+          <span class="form-error" id="name-error" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-dob">Date of Birth</label>
+          <input type="date" id="reg-dob" name="dob"
+            aria-required="true"
+            aria-describedby="dob-error" />
+          <span class="form-error" id="dob-error" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-email">Email Address</label>
+          <input type="email" id="reg-email" name="email"
+            placeholder="e.g. ann-mariewright@gmail.com"
+            autocomplete="email"
+            aria-required="true"
+            aria-describedby="email-error" />
+          <span class="form-error" id="email-error" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-username">Username</label>
+          <input type="text" id="reg-username" name="username"
+            placeholder="Choose a username"
+            autocomplete="username"
+            aria-required="true"
+            aria-describedby="rusername-error" />
+          <span class="form-error" id="rusername-error" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-password">Password</label>
+          <input type="password" id="reg-password" name="password"
+            placeholder="At least 6 characters"
+            autocomplete="new-password"
+            aria-required="true"
+            aria-describedby="rpassword-error" />
+          <span class="form-error" id="rpassword-error" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-confirm">Confirm Password</label>
+          <input type="password" id="reg-confirm" name="confirm"
+            placeholder="Re-enter your password"
+            autocomplete="new-password"
+            aria-required="true"
+            aria-describedby="confirm-error" />
+          <span class="form-error" id="confirm-error" role="alert"></span>
+        </div>
+
+        <button type="submit" class="form-submit">Create Account</button>
+
+        <p class="mt-1 text-center" class="form-link">
+          Already have an account? <a href="login.html" >Login here</a>
+        </p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p class="footer__logo">Fresh<span>Nest</span></p>
+    <p class="footer__copy">&copy; 2026 FreshNest. All rights reserved.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
